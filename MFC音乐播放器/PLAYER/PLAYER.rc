@@ -1,0 +1,268 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PLAYER.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PLAYER.ico"
+IDI_ICON1               ICON                    "res\\0.ico"
+IDI_ICON2               ICON                    "res\\1.ico"
+IDI_ICON3               ICON                    "res\\2.ico"
+IDI_ICON4               ICON                    "res\\3.ico"
+IDI_ICON5               ICON                    "res\\4.ico"
+IDI_ICON6               ICON                    "res\\5.ico"
+IDI_ICON7               ICON                    "res\\6.ico"
+IDI_ICON8               ICON                    "res\\7.ico"
+IDI_ICON9               ICON                    "res\\8.ico"
+IDI_ICON10              ICON                    "res\\9.ico"
+IDI_ICON11              ICON                    "res\\10.ico"
+IDI_ICON12              ICON                    "res\\11.ico"
+IDI_ICON13              ICON                    "res\\12.ico"
+IDI_ICON14              ICON                    "res\\13.ico"
+IDI_MYLOVE              ICON                    "res\\mylove.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 天马星空"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "天马星空 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PLAYER_DIALOG DIALOGEX 0, 0, 202, 270
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PLAYER"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST,7,117,188,126,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "播放",IDC_PLAY,67,70,20,18,BS_ICON | BS_FLAT
+    PUSHBUTTON      "停止",IDC_STOP,35,243,11,12,BS_BITMAP | BS_FLAT
+    PUSHBUTTON      "打开",IDC_OPEN,7,243,13,11,BS_BITMAP | BS_FLAT
+    PUSHBUTTON      "上一首",IDC_PER,45,69,18,18,BS_ICON | BS_FLAT
+    PUSHBUTTON      "下一首",IDC_NEXT,89,70,19,18,BS_ICON | BS_FLAT
+    PUSHBUTTON      "隐藏列表",IDC_POP,7,85,11,15,BS_BITMAP
+    PUSHBUTTON      "删除",IDC_SDEL,21,243,13,12,BS_BITMAP | BS_FLAT
+    PUSHBUTTON      "退出",IDC_BEXIT,182,7,13,11,BS_BITMAP | BS_FLAT
+    PUSHBUTTON      "帮助",IDC_BHELP,7,7,17,17,BS_ICON | BS_FLAT
+    GROUPBOX        "",IDC_STATIC,7,114,188,149
+    CONTROL         "Slider1",IDC_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_ENABLESELRANGE | WS_TABSTOP,65,49,92,15,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_vol,44,48,19,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY,WS_EX_DLGMODALFRAME
+    GROUPBOX        "",IDC_STATIC,7,37,188,64
+    PUSHBUTTON      "单曲",IDC_MODELDESIGN,113,70,20,17
+    CONTROL         "Slider1",IDC_PROGRESS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | NOT WS_VISIBLE | WS_TABSTOP,24,7,153,15
+    PUSHBUTTON      "最小化",IDC_MIM,168,7,12,12,BS_BITMAP | BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "PLAYER Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "PLAYER"
+            VALUE "LegalCopyright", "版权所有 (C) 2013"
+            VALUE "OriginalFilename", "PLAYER.EXE"
+            VALUE "ProductName", "PLAYER 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PLAYER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "F:\\王飞\\课程设计\\学习音频播放\\Myplayer\\Myplayer\\res\\bitmap1.bmp"
+IDB_BITMAP2             BITMAP                  "res\\backgroud.bmp"
+IDB_BITMAP3             BITMAP                  "F:\\王飞\\课程设计\\PLAYER\\res\\close.bmp"
+IDB_BITMAP4             BITMAP                  "res\\hideOver.bmp"
+IDB_BITMAP5             BITMAP                  "res\\playlistOver.bmp"
+IDB_BITMAP6             BITMAP                  "res\\playlistOver2.bmp"
+IDB_BITMAP7             BITMAP                  "res\\volume.bmp"
+IDB_BITMAP8             BITMAP                  "res\\listNormal.bmp"
+IDB_BITMAP9             BITMAP                  "res\\stopOver.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "操作"
+    BEGIN
+        POPUP "播放模式"
+        BEGIN
+            MENUITEM "单曲循环",                        ID_SINGLE
+            MENUITEM "顺序播放",                        ID_QUE
+            MENUITEM "随机播放",                        ID_RANDOM
+        END
+        MENUITEM "添加歌曲",                        ID_ADD
+        MENUITEM "音乐迷你",                        ID_MINI
+        MENUITEM "退出",                          ID_EXIT
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于软件",                        ID_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 PLAYER(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PLAYER.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
